@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mtr4chua-o25ctmjud">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.3">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>2.- Encendiendo los LEDs | Róbotica con Maqueen</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script>window.exeXapi={"odeId":"20260907124946LRP6BJ","packageTitle":"Róbotica con Maqueen","language":"es"};</script><script src="../libs/xapi/exe_xapi.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mtr4chua-o25ctmjud" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Robótica con Maqueen</a>
+</li>
+<li> <a href="../html/1--moviendo-los-motores.html" class="no-ch">1.- Moviendo los motores</a>
+</li>
+<li class="active"> <a href="../html/2--encendiendo-los-leds.html" class="active no-ch">2.- Encendiendo los LEDs</a>
+</li>
+<li> <a href="../html/3--utilizando-los-sensores-de-maqueen.html" class="no-ch">3.- Utilizando los sensores de Maqueen</a>
+</li>
+<li> <a href="../html/4--retos-con-maqueen.html" class="no-ch">4.- Retos con Maqueen</a>
+</li>
+<li> <a href="../html/i-guia-didactica.html" class="no-ch">I. Guía didáctica</a>
+</li>
+<li> <a href="../html/ii-creditos.html" class="no-ch">II. Créditos</a>
+</li>
+</ul>
+</nav><main id="page-mtr4chua-o25ctmjud" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Róbotica con Maqueen</p></div>
+<div class="page-header"><h1 class="page-title">2.- Encendiendo los LEDs</h1></div>
+</header><div id="page-content-page-mtr4chua-o25ctmjud" class="page-content">
+<article id="block-mtr4chub-jluq6dsbh" class="box no-header">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mtr4chub-lbtub2lf5" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mtr4chub-lbtub2lf5&quot;}">
+<p style="text-align: justify;">Para controlar los dos LEDs rojos que tiene el robot Maqueen en la parte delantera, utilizamos el bloque LED, en el que tenemos la opción de elegir el LED derecho o izquierdo, y la opción de apagarlo o encenderlo.</p>
+<p><img src="../content/resources/img0.6.png" width="675" height="155" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p style="text-align: justify;">Realiza un programa con el que se enciendan los LEDs izquierdo y derecho alternativamente cada medio segundo, para siempre.</p>
+</div>
+</div>
+</article><article id="block-mtr4chub-4d1fz1b5z" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title"> 2.1.- Encendiendo los LEDs RGB</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mtr4chub-a05te4aap" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mtr4chub-a05te4aap&quot;}">
+<p style="text-align: justify;"><img src="../content/resources/img0.7.png" width="188" height="160" style="float: left; margin-right: 20px; margin-left: 20px;" /> Maqueen tiene 4 LEDs RGB muy brillantes que pueden mostrar ¡hasta 16 millones de colores diferentes! Los puedes encontrar en la parte de abajo, como pequeños rectángulos blancos conectados a la patilla P15.</p>
+<p style="text-align: justify;">Dentro de cada LED hay 3 LEDs más pequeños; Rojo, Verde y Azul y dependiendo de la intensidad luminosa de cada uno será el color final que podrás apreciar.</p>
+<p style="text-align: justify;">Cada LED RGB tiene 255 niveles de luminosidad.</p>
+<p style="text-align: justify;"><br />Para programar los LEDs RGB con Makecode, tenemos que cagar previamente la extensión <strong>neopixel </strong>en el menú  <strong>Avanzado -> + Extensiones.</strong></p>
+<p><strong><img src="../content/resources/img1.2.png" width="900" height="480" style="display: block; margin-left: auto; margin-right: auto;" /></strong></p>
+<p><strong>  </strong></p>
+<p style="text-align: justify;">A partir de entonces, disponemos de una nueva categoría llamada <span style="color: #00ccff;"><strong><span style="font-size: 18pt;">Neopixel</span></strong></span>, con varios bloques que nos permiten controlar los LEDs RGB.</p>
+<p><img src="../content/resources/img2.2.png" width="901" height="503" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>  </p>
+<p style="text-align: justify;">Esta categoría se utiliza para encender tiras de LEDs RGB de distinta longitud, así que lo primero que tenemos que hace es configurarla para nuestro Maqueen, que tiene 4 LEDs conectados al puerto P15, mediante el siguiente bloque dentro del bloque "<strong>al iniciar</strong>".</p>
+<p style="text-align: justify;"><img src="../content/resources/img3.1.png" width="651" height="113" style="display: block; margin-left: auto; margin-right: auto;" /><br /> Con el siguiente bloque podemos encender todos los LEDs RGB de un color determinado a elegir entre 16 opciones. Prueba todos los colores, ¿Cuál es tu favorito?</p>
+<p><img src="../content/resources/img4.png" width="652" height="151" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Y con el siguiente programa podemos hacer unas "luces de discoteca".</p>
+<p style="text-align: center;"><img src="../content/resources/img5.png" width="651" height="333" style="display: block; margin-left: auto; margin-right: auto;" /><br /> <img src="../content/resources/img6.png" width="334" height="189" alt="" /></p>
+</div>
+</div>
+</article><article id="block-mtr4chub-1e2dq46nc" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/task.png" alt="">
+</div>
+<h1 class="box-title">Actividad 2: Luces</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mtr4chub-7suettid9" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mtr4chub-7suettid9&quot;}">
+<p style="text-align: justify;">Conecta al ordenador la placa de micro:bit y realiza los siguientes ejercicios:</p>
+<ol>
+<li style="text-align: justify;">Crea un programa en el que el robot Maqueen se mueva hacia adelante durante 2 segundos, gire a la derecha y encienda el LED derecho mientras avanza durante 1 segundo, luego gire a la izquierda encendiendo el LED izquierdo (y apagando el derecho), durante otro segundo.</li>
+<li style="text-align: justify;">Crea un programa para simular el funcionamiento de un semáforo con los LEDs RGB de Maqueen.</li>
+<li style="text-align: justify;">Crea un programa que al pulsar el botón A se enciendan los LEDs RGB de color azul, al pulsar el botón B, se enciendan en amarillo y al presionar ambos, se encientan en verde.</li>
+<li style="text-align: justify;">Haz que Maqueen baile mientras muestra las luces de discoteca al mismo tiempo que muestra un corazón latiendo en su pantalla (quita el sensor de ultrasonidos para ver mejor la pantalla).</li>
+</ol>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/1--moviendo-los-motores.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/3--utilizando-los-sensores-de-maqueen.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>

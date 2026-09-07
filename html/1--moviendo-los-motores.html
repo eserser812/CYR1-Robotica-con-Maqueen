@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mtr4chua-47z7movrc">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.3">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>1.- Moviendo los motores | Róbotica con Maqueen</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script>window.exeXapi={"odeId":"20260907124946LRP6BJ","packageTitle":"Róbotica con Maqueen","language":"es"};</script><script src="../libs/xapi/exe_xapi.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mtr4chua-47z7movrc" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Robótica con Maqueen</a>
+</li>
+<li class="active"> <a href="../html/1--moviendo-los-motores.html" class="active no-ch">1.- Moviendo los motores</a>
+</li>
+<li> <a href="../html/2--encendiendo-los-leds.html" class="no-ch">2.- Encendiendo los LEDs</a>
+</li>
+<li> <a href="../html/3--utilizando-los-sensores-de-maqueen.html" class="no-ch">3.- Utilizando los sensores de Maqueen</a>
+</li>
+<li> <a href="../html/4--retos-con-maqueen.html" class="no-ch">4.- Retos con Maqueen</a>
+</li>
+<li> <a href="../html/i-guia-didactica.html" class="no-ch">I. Guía didáctica</a>
+</li>
+<li> <a href="../html/ii-creditos.html" class="no-ch">II. Créditos</a>
+</li>
+</ul>
+</nav><main id="page-mtr4chua-47z7movrc" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Róbotica con Maqueen</p></div>
+<div class="page-header"><h1 class="page-title">1.- Moviendo los motores</h1></div>
+</header><div id="page-content-page-mtr4chua-47z7movrc" class="page-content">
+<article id="block-mtr4chub-643celqyk" class="box no-header">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mtr4chub-aiwiqrie1" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mtr4chub-aiwiqrie1&quot;}">
+<p style="text-align: justify;">Para manejar el robot Maqueen con Makecode, tenemos que cagar previamente la extensión <strong>maqueen</strong> en el menú <strong>Avanzado -> + Extensiones</strong></p>
+<p><strong><img src="../content/resources/img0.2.png" width="900" height="480" style="display: block; margin-left: auto; margin-right: auto;" /></strong></p>
+</div>
+</div>
+</article><article id="block-mtr4chub-rbtqf5fp1" class="box no-header">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mtr4chub-5y2fdxyj7" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mtr4chub-5y2fdxyj7&quot;}">
+<p style="text-align: justify;">A partir de entonces, disponemos de una nueva categoría llamada <span style="font-size: 18pt; color: #339966;"><strong>Maqueen</strong></span>, con varios bloques que nos permiten controlar el robot.</p>
+<p><img src="../content/resources/img0.3.png" width="900" height="552" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+</div>
+</div>
+</article><article id="block-mtr4chub-kah7jhgyv" class="box no-header">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mtr4chub-1k2z2yqer" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mtr4chub-1k2z2yqer&quot;}">
+<p style="text-align: justify;">El bloque que nos permite mover los motores es el bloque<strong> motor</strong>, mediante el cual podemos elegir el motor que queremos mover, el sentido de giro y la velocidad del mismo.</p>
+<p><img src="../content/resources/img0.4.png" width="852" height="178" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p style="text-align: justify;">   </p>
+<p style="text-align: justify;">La velocidad que podemos indicar va desde 0 hasta 255.</p>
+<p style="text-align: justify;">En el siguiente ejemplo podemos comprobar el movimiento del robot en línea recta:</p>
+<p><img src="../content/resources/img1.png" width="400" height="214" style="display: block; margin-left: auto; margin-right: auto;" />  </p>
+<p style="text-align: justify;">El bloque <strong>parar motor</strong> sirve para parar uno de los motores o ambos, también nos permite hacer girar el robot cuando está moviéndose, como el siguiente ejemplo:</p>
+<p><img src="../content/resources/img2.png" width="400" height="385" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p style="text-align: center;"><img src="../content/resources/img3.2.png" width="862" height="357" alt="" /></p>
+<p>   </p>
+<p style="text-align: justify;">¿Te atreves a programar el robot Maqueen con los bloques vistos para que baile como en el siguiente vídeo?</p>
+<p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube.com/embed/A5OPC6NtOIM" allowfullscreen="allowfullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe></p>
+<p></p>
+<p style="text-align: justify;"></p>
+</div>
+</div>
+</article><article id="block-mtr4chub-oy4601bf1" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/task.png" alt="">
+</div>
+<h1 class="box-title">Actividad 1: Moviendo el robot</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mtr4chub-8ibs4gtcm" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mtr4chub-8ibs4gtcm&quot;}">
+<p style="text-align: justify;">Conecta al ordenador la placa de micro:bit y realiza los siguientes ejercicios:</p>
+<p style="text-align: justify;">     1. Crea un programa en el que el robot Maqueen se mueva hacia adelante durante 2 segundos, se pare durante 2 segundos y retroceda durante 2 segundos marcha atrás, llegando a la posición de inicio.</p>
+<p><img src="../content/resources/img0.5.png" width="300" height="79" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>     2. Crea un programa en el que el robot Maqueen avance durante 3 segundos, de un giro de 180 grados, avance 3 segundos y vuelva a girar 180 grados, para terminar en el punto de partida, pero girado 180º.</p>
+<p><img src="../content/resources/img1.1.png" width="302" height="77" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>     3. Crea un programa para que el robot Maqueen avance durante 1 segundo, gire 90 grados , vuelva a avanzar 1 segundo, vuelva a girar 90 grados, y así hasta que dibuje un cuadrado con su movimiento.</p>
+<p><img src="../content/resources/img2.1.png" width="300" height="223" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>     4. Programa  la placa micro:bit para que salga desde la línea marcada en el suelo de la clase y llegue hasta el cuadrado marcado en el suelo, sin chocar con las cajas que se han puesto. La placa micro:bit irá mostrando en la pantalla una flecha con la dirección que toma en cada instante.</p>
+<p><img src="../content/resources/img3.png" width="900" height="332" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p></p>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../index.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/2--encendiendo-los-leds.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>
